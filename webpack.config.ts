@@ -7,7 +7,7 @@ import 'webpack-dev-server';
 type DevMode = Configuration | WebpackOptionsNormalized;
 
 const config: DevMode = {
-  entry: "./src/index.js",
+  entry: "./src/index.ts",
   mode: "development",
   module: {
     rules: [
@@ -19,7 +19,7 @@ const config: DevMode = {
       }
     ]
   },
-  resolve: { extensions: ["*", ".ts", ".tsx"] },
+  resolve: { extensions: ["*", ".js", ".ts", ".tsx"] },
   output: {
     path: path.resolve(__dirname, "dist/"),
     publicPath: "/dist/",
