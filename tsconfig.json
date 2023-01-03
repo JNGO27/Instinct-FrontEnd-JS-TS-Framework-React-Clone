@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "module": "CommonJS",
+      "target": "es5",
+      "noImplicitAny": true,
+      "sourceMap": true,
+      "lib": ["es6", "dom"],
+      "rootDir": "src",
+      "esModuleInterop": true,
+      "types": ["webrtc"],
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+}
